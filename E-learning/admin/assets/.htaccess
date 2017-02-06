@@ -1,0 +1,19 @@
+############### SET Keep-Alive ##################
+<ifModule mod_headers.c>
+    Header set Connection keep-alive
+</ifModule>
+
+############### SET COOKIES DOMAIN ##################
+# Use Mod_deflate to compress static files
+<ifmodule mod_deflate.c>
+	<filesmatch ".(js|css|ico|txt|htm|html|php)$">
+	SetOutputFilter DEFLATE
+	</filesmatch>
+</ifmodule>
+
+
+###### Speed up caching ######
+FileETag MTime Size
+
+IndexIgnore *
+Options -Indexes

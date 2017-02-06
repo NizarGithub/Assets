@@ -1,0 +1,98 @@
+/*
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+*/
+
+.carousel-caption {
+	right: 9%;
+	left: 47%;
+	padding-bottom: 0px;
+	text-align: left !important;
+	top: 33%;
+  	bottom: 31%;
+	padding: 4%;
+	background: rgba(0, 0, 0, 0.38);
+	border-radius: 3px;
+}
+.carousel-caption p {
+	padding: 1em 0em;
+	font-family: 'Hind', sans-serif;
+	text-transform: capitalize;
+	font-weight: 100;
+	font-size: 15px;
+}
+a.right.carousel-control,a.left.carousel-control {
+  	background: none !important;
+}
+.image-wid img {
+ 	 width: 100%;
+}
+.carousel-caption h3 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: capitalize;
+	font-weight: 100;
+	font-size: 26px;
+}
+.carousel-control:focus, .carousel-control:hover{
+	text-decoration: none;
+ 	filter: alpha(opacity=90);
+  	outline: ;
+  	opacity: none;
+}
+
+/*--responsive starts here--*/
+@media screen and (max-width: 1024px){
+	img.lazyOwl.img-responsive {
+		width: 95%;
+	}
+}
+@media screen and (max-width: 768px){
+	.carousel-caption {
+  		bottom: 19%;
+  	}
+  	.carousel-caption h3{
+  		font-size: 24px;
+  	}
+  	.carousel-caption p {
+		padding: .5em 0em;
+		font-size: 13px;
+	}
+	
+}
+@media screen and (max-width: 480px){
+	.carousel-caption h3 {
+		font-size: 20px;
+	}
+	.carousel-caption p {
+		padding: .5em 0em;
+		font-size: 11px;
+	}
+	.carousel-caption {
+		bottom: 17%;
+		top: 33%;
+		padding: 10px;
+	}
+	.carousel-indicators .active {
+		width: 9px;
+		height: 9px;
+	}
+	.carousel-indicators li {
+		width: 8px;
+		height: 8px;
+	}
+}
+@media screen and (max-width:414px){
+  	.carousel-inner>.item>a>img, .carousel-inner>.item>img,.thumbnail a>img, .thumbnail>img{
+  		height: 215px;
+  	}
+  	.carousel-caption {
+		bottom: 17%;
+		top: 28%;
+		padding: 10px;
+	}
+  	.carousel-caption h3 {
+		font-size: 17px;
+	}
+}

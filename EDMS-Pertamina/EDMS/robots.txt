@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /application/
+Disallow: /assets/
+Disallow: /system/
+Disallow: /gateaway/
+Disallow: /uploaded/

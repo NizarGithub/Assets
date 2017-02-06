@@ -1,0 +1,18 @@
+Tugas tentang pembuatan aplikasi perpustakaan berbasis web
+Aplikasi ini dibuat untuk memenuhi syarat ujian kenaikan kelas (UKK)
+
+Nama 	: Agis Rahma Herdiana
+Kelas 	: XI RPL D
+
+# Instalasi
+-Database berada di dalam folder perpustakaan.sql (zip)
+-Ubah koneksi yang berada dalam folder config
+
+# Penggunaan 
+-Untuk Login sebagai Kepala Perpustakaan :
+Username	 : Admin
+Password 		 : Admin
+
+-Untuk Login sebagai Pegawai :
+Username 	: Pegawai
+Password 		: Pegawai 

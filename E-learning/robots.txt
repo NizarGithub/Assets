@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /Foto/
+Disallow: /media/
+Disallow: /plugins/
+Disallow: /system/
+Disallow: /plugins/

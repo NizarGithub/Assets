@@ -1,0 +1,295 @@
+/*
+ * Dedicated to PERTAMINA
+ * Web Application
+ * Creator by IBeESNay
+ * Copyright © 2015 IBeES; Licensed
+ * IBeES (Information Based Electronic System)
+ */
+
+@import url("style_admin_red.css");
+@import url("style_icon.css");
+
+/*
+@import url("style_chzn.css");
+*/
+@import url("style_datepicker.css");
+@import url("media_query.min.css");
+
+/*--error--*/
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+label:hover {
+    cursor: pointer;
+}
+.error {
+  padding: 10em 0px;
+}
+.error-top{
+ text-align:center;
+ position:relative;
+}
+.error-top h4 {
+  font-weight: 700;
+  font-size: 2.2em;
+  color: #14b9d5;
+  padding: 10px 10px;
+  background: #fff;
+  position: absolute;
+  top: 0.5%;
+  text-transform: uppercase;
+  left: 25%;
+}
+.error-top h3 {
+  font-weight: 700;
+  font-size: 15em;
+  color: #14b9d5;
+}
+.error-top h5 {
+  font-weight: 600;
+  font-size: 2.55em;
+  color: #14b9d5;
+  margin: 100px 0px 10px 0px;
+}
+.error-top p {
+  font-weight: 600;
+  font-size: 17px;
+  color: #14b9d5;
+}
+.e-btn{
+	margin-top:5em;
+}
+.e-btn a{
+	background: #1bb8d3;
+  padding: 12px 45px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 600;
+}
+/*--error--*/
+/* Shutter Out Horizontal */
+a.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background: #1bb8d3;
+  color: #fff;
+}
+a.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #89ca62;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+a.hvr-shutter-out-horizontal:hover,a.hvr-shutter-out-horizontal:focus,a.hvr-shutter-out-horizontal:active {
+  color: white;
+}
+a.hvr-shutter-out-horizontal:hover:before,a.hvr-shutter-out-horizontal:focus:before,a.hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.blackMask {position: fixed; display: table; width: 100%; height: 100%; top: 0; left: 0; visibility: hidden; background-color: rgba(0,0,0,0.9); text-align: center; z-index: 100}
+.blackMask .popupVCenter {#position: absolute; display: table-cell; #top: 50%; vertical-align: middle; text-align: center}
+.popupVCenter .popup {#position: relative; #top: -50%; text-align: center; color: #fff; font-weight: 500; font-size: 14px}
+.whiteGlow {box-shadow: 0 0 8px 2px rgba(255,255,255,0.6)}
+
+.spinner {width: 50px; height: 50px; margin: 20px auto; background: #fff;
+    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+    -moz-animation: rotateplane 1.2s infinite ease-in-out;
+    -ms-animation: rotateplane 1.2s infinite ease-in-out;
+    -o-animation: rotateplane 1.2s infinite ease-in-out;
+    animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+    0% {-webkit-transform: perspective(120px)}
+    50% {-webkit-transform: perspective(120px) rotateY(180deg)}
+    100% {-webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg)}
+}
+@-moz-keyframes rotateplane {
+    0% {-webkit-transform: perspective(120px)}
+    50% {-webkit-transform: perspective(120px) rotateY(180deg)}
+    100% {-webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg)}
+}
+@-o-keyframes rotateplane {
+    0% {-webkit-transform: perspective(120px)}
+    50% {-webkit-transform: perspective(120px) rotateY(180deg)}
+    100% {-webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg)}
+}
+@-ms-keyframes rotateplane {
+    0% {-webkit-transform: perspective(120px)}
+    50% {-webkit-transform: perspective(120px) rotateY(180deg)}
+    100% {-webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg)}
+}
+@keyframes rotateplane {
+    0% {transform: perspective(120px) rotateX(0deg) rotateY(0deg)}
+    50% {transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)}
+    100% {transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)}
+}
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#sekilas {
+width:100%;
+height:103px;
+overflow:hidden;
+}
+#sekilas li {
+border:0;
+margin:0;
+padding:0;
+height:auto;
+list-style:none;
+list-style:none;
+}
+#sekilas .teks {
+display:block;
+margin-top:15px;
+}
+.topik-agenda {
+border-bottom: 1px solid #f5f5f5;
+padding-bottom: 5px;
+}
+.tgl-agenda {
+font-weight: bold;
+color: #D44950;
+}
+
+#scrolltab{
+	width:30px;
+	height:30px;
+	position:fixed;
+	top:90%;
+	right:20px;
+	margin-top:-20px;
+	background-color:#cd2125;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	border: 2px solid red;
+	border-radius:50%;
+	z-index:2000;
+	display:none;
+	background-image: url(../images/scrolltop.png);
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+        background-size: 100% 100%;
+	cursor:pointer;
+}
+.logo-pertamina {
+    width: 50px;
+    height: 45px;
+    float: right;
+    margin-top: 6px;
+    margin-right: 15px;
+}
+.img-logo-pertamina {
+    width: 100%;
+    height: 100%;
+    transition: 0.9s all ease;
+    -webkit-transition: 0.9s all ease;
+    -moz-transition: 0.9s all ease;
+    -o-transition: 0.9s all ease;
+    -ms-transition: 0.9s all ease;
+}
+.img-logo-pertamina:hover {
+    opacity: 0.3;
+    transform: rotate(720deg);
+}
+.cover-profil {
+    background: url(../images/bg-pertamina.png);
+    height: 200px;
+    background-size: 100% 100%;
+}
+.foto-profil {
+    margin-top: 100px;
+    border-radius: 10px;
+    border: 5px solid skyblue;
+    float: right;
+    opacity: none;
+    background: #fff;
+}
+.bg-modhome {
+/*background-image: -moz-linear-gradient(top, #ca252a, #cd2125);
+background-image: -ms-linear-gradient(top, #ca252a, #cd2125);
+background-image: -ms-gradient(linear, 0 0, 0 100%, from(#ca252a), to(#cd2125));
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ca252a), to(#cd2125));
+background-image: -webkit-linear-gradient(top, #ca252a, #cd2125);
+background-image: -o-linear-gradient(top, #ca252a, #cd2125);
+background-image: linear-gradient(to bottom, #048ae4, #cd2125);
+background-image: linear-gradient(to left, #555, #fff);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ca252a', endColorstr='#cd2125', GradientType=0);*/
+background: url(../images/bg-home-pertamina.jpg);
+height: 220px;
+background-size: 100% 100%;
+border-radius: 25px;
+border-top: none;
+}
+.bg-img-modhome {
+    opacity: 0.8;
+	-webkit-transition:900ms ease-out;
+-moz-transition: 300ms ease-out;
+-ms-transition: 300ms ease-out;
+-o-transition: 300ms ease-out;
+transition: 900ms ease-out;
+width: 50%;
+}
+.bg-img-modhome:hover {
+    opacity: 0.9;
+}
+.area-petugas {
+background-image: -moz-linear-gradient(top, #ca252a, #cd2125);
+background-image: -ms-linear-gradient(top, #ca252a, #cd2125);
+background-image: -ms-gradient(linear, 0 0, 0 100%, from(#ca252a), to(#cd2125));
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ca252a), to(#cd2125));
+background-image: -webkit-linear-gradient(top, #ca252a, #cd2125);
+background-image: -o-linear-gradient(top, #ca252a, #cd2125);
+background-image: linear-gradient(to bottom, #048ae4, #cd2125);
+background-image: linear-gradient(to left, transparent, #f5f5f5);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ca252a', endColorstr='#cd2125', GradientType=0);
+
+    height: 130px;
+    margin-top: 15px;
+    width: 90%;
+    margin-left: 30px;
+}
+.foto-area-petugas img {
+    width: 115px;
+    border: 3px solid #fff;
+    margin-right: 20px;
+}
+.info-tugas {
+    padding-bottom: 4px;
+}
